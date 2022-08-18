@@ -1,0 +1,44 @@
+.m-red {
+    background-color: red !important;
+}
+
+.w-75 {
+    width: 50% !important;
+}
+
+/* dépassement */
+
+.over-h {
+    overflow: hidden;
+}
+
+/* position */
+
+.absolute {
+    position: absolute;
+}
+
+.relative {
+    position: relative;
+}
+
+/* flex */
+.elastic {
+    display: flex;
+}
+
+.col {
+    flex-direction: column;
+}
+
+.center {
+    align-items: center;
+    justify-content: center;
+}
+
+/* code css */
+
+.baniere {
+    background-color: aqua !important;
+    height: 100vh;
+}
