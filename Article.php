@@ -1,7 +1,4 @@
-<?php
-$bdd = new PDO("mysql:host=127.0.0.1;dbname=Article; charset=uft8","root","");
 
-?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -73,7 +70,7 @@ $bdd = new PDO("mysql:host=127.0.0.1;dbname=Article; charset=uft8","root","");
     <!-- Page Header Start -->
 
 
-   
+   <marquee behavior="" direction=""> <h1>Bientôt Disponible</h1> </marquee>
 
 
     <!-- Footer Start -->
@@ -81,7 +78,7 @@ $bdd = new PDO("mysql:host=127.0.0.1;dbname=Article; charset=uft8","root","");
         <div class="row pt-5">
             <div class="col-lg-3 col-md-6 mb-5">
                 <a href="index.html" class="navbar-brand">
-                    <h3 class="m-0 text-white display-4">Fraternité <span class="text-primary">Plus</span></h3>
+                <h3 class="m-0 text-white display-4">Fraternité</h3> <h3><span class="text-primary">Plus</span></h3>
                 </a>
                 <p>Ensemble bâtissons un monde d'espoir, d'inclusion et de justice sociale.</p>
                 <div class="d-flex justify-content-start mt-4">

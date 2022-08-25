@@ -5,8 +5,12 @@ try {
 }
  catch (\Throwable $th) {
         echo'database error';
+}   if (isset($_POST['Envoyer'])) {
+    echo"no problem";
 }
         if (isset($_POST['article_titre'], $_POST['article_contenu'],$_POST['article_auteur'], )) {
+
+            echo $_POST;
             if (!empty($_POST['article_titre']) AND !empty($_POST['article_contenu']) AND !empty($_POST['article_auteur']) ) {
                 $article_titre = strip_tags(htmlspecialchars($_POST['article_titre']));
                 $article_contenu = strip_tags(htmlspecialchars($_POST['article_contenu']));
@@ -20,7 +24,7 @@ try {
                 if (!is_uploaded_file($tmp_dir)) {
                    exit('le fichier est introuvable');
                 }
-
+                echo" usze";
                 #__Verification extension de fichier__#
                 
                 $type_file =$_FILES['article_fichier']['type'];
@@ -36,6 +40,7 @@ try {
 
             } else {
                 $erreur ='Veuillez remplir tous les champs';
+                echo"hiiii";
                 }
             }
 ?>
@@ -168,8 +173,9 @@ try {
                                 <p class="help-block text-danger"></p>
                             </div>
                             <div>
-                                <button class="btn btn-primary font-weight-semi-bold px-4" style="height: 50px;"  type="Submit" value="envoyer l'article">Poster</button>
-                            </div>
+                                <input type="submit" value=Envoyer />
+                    <!--            <button class="btn btn-primary font-weight-semi-bold px-4" style="height: 50px;"  type="Submit" value="envoyer l'article">Poster</button>-->
+                           </div>
                         </form>
                              <br>
                 </div>
