@@ -170,7 +170,21 @@ h6,
     }
 }
 
-.page-header {
+.page-contact {
+    height: 400px;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/header.jpg);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.page-heade {
+    height: 400px;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/about.jpg);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.page-article {
     height: 400px;
     background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/header.jpg);
     background-position: top;
@@ -178,8 +192,9 @@ h6,
     background-size: cover;
 }
 
+
 @media (max-width: 991.98px) {
-    .page-header {
+    .page-about {
         height: 300px;
     }
 }
